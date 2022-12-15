@@ -12,26 +12,6 @@ export const searchImages = (query) => {
   });
 };
 
-
-
-//download image
-// export async function downloadImage(photoId)  {
-//   const imgUrl = axios.get("https://api.unsplash.com/search/photos")
-//   const getImage = await imgUrl.photos
-//   getImage.getPhoto(photoId).then((response) => response.blob())
-//     .then((blob) => {
-//       const a = document.createElement("a");
-//       a.href = URL.createObjectURL(blob);
-//       a.download = "photo.jpg";
-//       a.click();
-//       console.log("they just click me now o")
-//     });
-    
-    
-// }
-
-
-
 // get a specific image by its ID
 export const getImageById = (id) => {
   return axios.get(`https://api.unsplash.com/photos/${id}`, {
