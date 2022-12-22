@@ -1,0 +1,9 @@
+// const getRandomImage = async (query) => {
+    //     return axios.get(randomUrl, {
+    //         params: {
+    //             query: query
+    //         }
+    //     }).then((response) => {
+    //         setRandomImage(response.data.urls.full)
+    //     })
+    // };
