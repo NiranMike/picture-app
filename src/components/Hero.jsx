@@ -12,7 +12,7 @@ const Hero = ({
 }) => {
     return (
         <div>
-            <div className=" grid md:grid-cols-5">
+            <div className=" justify-center grid mm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
                 {
                 images.map((image) => (
                     <div key={
@@ -22,7 +22,7 @@ const Hero = ({
                         <img key={
                                 image.id
                             }
-                            className=" object-cover shadow-md w-[300px] h-[300px] m-2"
+                            className=" object-cover shadow-md w-[300px] h-[300px] mm:h-[200px] m-2"
                             src={
                                 image.urls.small
                             }
@@ -33,14 +33,14 @@ const Hero = ({
                                 () => DownloadButton(image.id)
                             }
                             size={28}
-                            className=" text-white cursor-pointer absolute top-[] bg-black mt-[-38px] md:mt-[-36px] ml-[236px] md:ml-[226px]  "/>
+                            className=" text-white cursor-pointer absolute top-[] bg-black mt-[-38px] md:mt-[-36px] ml-[245px] ml:ml-[155px] mm:ml-[132px] md:ml-[206px] lg:ml-[160px] xl:ml-[226px] 2xl:ml-[279px] "/>
                     </div>
                 ))
             } </div>
 
-            <h1 className="text-4xl text-[#e42828] py-5 mx-4 font-bold">Fashion</h1>
+            <h1 className="text-4xl text-[#000] py-5 mx-4 font-bold">Fashion</h1>
 
-            <div className=" grid md:grid-cols-5">
+            <div className=" justify-center grid mm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
                 {
                 fashionImages.map((image) => (
                     <div key={
@@ -50,7 +50,7 @@ const Hero = ({
                         <img key={
                                 image.id
                             }
-                            className="  shadow-md w-[300px] object-cover h-[300px] m-2"
+                            className=" object-cover shadow-md w-[300px] h-[300px] mm:h-[200px] m-2"
                             src={
                                 image.urls.small
                             }
@@ -61,14 +61,14 @@ const Hero = ({
                                 () => DownloadButton(image.id)
                             }
                             size={28}
-                            className=" text-white cursor-pointer absolute top-[] bg-black mt-[-38px] md:mt-[-36px] ml-[236px] md:ml-[226px]  "/>
+                            className=" text-white cursor-pointer absolute top-[] bg-black mt-[-38px] md:mt-[-36px] ml-[245px] ml:ml-[155px] mm:ml-[132px] md:ml-[206px] lg:ml-[160px] xl:ml-[226px] 2xl:ml-[279px] "/>
                     </div>
                 ))
             } </div>
 
-            <h1 className="text-4xl py-5 font-bold mx-4 text-[#e42828]">Animal</h1>
+            <h1 className="text-4xl py-5 font-bold mx-4 text-[#000]">Animal</h1>
 
-            <div className=" grid md:grid-cols-5">
+            <div className=" justify-center grid mm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
                 {
                 animalImages.map((image) => (
                     <div key={
@@ -78,7 +78,7 @@ const Hero = ({
                         <img key={
                                 image.id
                             }
-                            className="  shadow-md w-[300px] object-cover h-[300px] m-2"
+                            className=" object-cover shadow-md w-[300px] h-[300px] mm:h-[200px] m-2"
                             src={
                                 image.urls.small
                             }
@@ -89,14 +89,14 @@ const Hero = ({
                                 () => DownloadButton(image.id)
                             }
                             size={28}
-                            className=" text-white cursor-pointer absolute top-[] bg-black mt-[-38px] md:mt-[-36px] ml-[236px] md:ml-[226px]  "/>
+                            className=" text-white cursor-pointer absolute top-[] bg-black mt-[-38px] md:mt-[-36px] ml-[245px] ml:ml-[155px] mm:ml-[132px] md:ml-[206px] lg:ml-[160px] xl:ml-[226px] 2xl:ml-[279px] "/>
                     </div>
                 ))
             } </div>
 
-            <h1 className="text-4xl mx-4 py-5 font-bold text-[#e42828]">Children</h1>
+            <h1 className="text-4xl mx-4 py-5 font-bold text-[#000]">Children</h1>
 
-            <div className=" grid md:grid-cols-5">
+            <div className=" justify-center grid mm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
                 {
                 childrenImages.map((image) => (
                     <div key={
@@ -106,7 +106,7 @@ const Hero = ({
                         <img key={
                                 image.id
                             }
-                            className="  shadow-md w-[300px] object-cover h-[300px] m-2"
+                            className=" object-cover shadow-md w-[300px] h-[300px] mm:h-[200px] m-2"
                             src={
                                 image.urls.small
                             }
@@ -117,14 +117,14 @@ const Hero = ({
                                 () => DownloadButton(image.id)
                             }
                             size={28}
-                            className=" text-white cursor-pointer absolute top-[] bg-black mt-[-38px] md:mt-[-36px] ml-[236px] md:ml-[226px]  "/>
+                            className=" text-white cursor-pointer absolute top-[] bg-black mt-[-38px] md:mt-[-36px] ml-[245px] ml:ml-[155px] mm:ml-[132px] md:ml-[206px] lg:ml-[160px] xl:ml-[226px] 2xl:ml-[279px] "/>
                     </div>
                 ))
             } </div>
 
-            <h1 className="text-4xl mx-4 text-[#e42828] py-5 font-bold">Perfume</h1>
+            <h1 className="text-4xl mx-4 text-[#000] py-5 font-bold">Perfume</h1>
 
-            <div className=" grid md:grid-cols-5 ">
+            <div className=" justify-center grid mm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
                 {
                 perfumeImages.map((image) => (
                     <div key={
@@ -134,7 +134,7 @@ const Hero = ({
                         <img key={
                                 image.id
                             }
-                            className="   shadow-md object-cover w-[300px] h-[300px] m-2"
+                            className=" object-cover shadow-md w-[300px] h-[300px] mm:h-[200px] m-2"
                             src={
                                 image.urls.small
                             }
@@ -145,14 +145,14 @@ const Hero = ({
                                 () => DownloadButton(image.id)
                             }
                             size={28}
-                            className=" text-white cursor-pointer absolute top-[] bg-black mt-[-38px] md:mt-[-36px] ml-[236px] md:ml-[226px]  "/>
+                            className=" text-white cursor-pointer absolute top-[] bg-black mt-[-38px] md:mt-[-36px] ml-[245px] ml:ml-[155px] mm:ml-[132px] md:ml-[206px] lg:ml-[160px] xl:ml-[226px] 2xl:ml-[279px] "/>
                     </div>
                 ))
             } </div>
 
-            <h1 className=" mx-4 text-4xl text-[#e42828] py-5 font-bold">Hotel</h1>
+            <h1 className=" mx-4 text-4xl text-[#000] py-5 font-bold">Hotel</h1>
 
-            <div className=" grid md:grid-cols-5 ">
+            <div className=" justify-center grid mm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
                 {
                 hotelImages.map((image) => (
                     <div key={
@@ -162,7 +162,7 @@ const Hero = ({
                         <img key={
                                 image.id
                             }
-                            className="   shadow-md object-cover object-center w-[300px] h-[300px] m-2"
+                            className=" object-cover shadow-md w-[300px] h-[300px] mm:h-[200px] m-2"
                             src={
                                 image.urls.small
                             }
@@ -173,7 +173,7 @@ const Hero = ({
                                 () => DownloadButton(image.id)
                             }
                             size={28}
-                            className=" text-white cursor-pointer absolute top-[] bg-black mt-[-38px] md:mt-[-36px] ml-[236px] md:ml-[226px]  "/>
+                            className=" text-white cursor-pointer absolute top-[] bg-black mt-[-38px] md:mt-[-36px] ml-[245px] ml:ml-[155px] mm:ml-[132px] md:ml-[206px] lg:ml-[160px] xl:ml-[226px] 2xl:ml-[279px] "/>
                     </div>
                 ))
             } </div>

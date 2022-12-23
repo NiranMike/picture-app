@@ -7,6 +7,7 @@ export const searchImages = (query) => {
     params: {
       query: query,
       client_id: unsplashApiKey,
+      per_page: 25,
     },
   });
 };
@@ -19,3 +20,33 @@ export const getImageById = (id) => {
     },
   });
 };
+
+
+export const DownloadButton = (photoId) => {
+  const handleDownload = async () => {
+      try { // Make a request to the Unsplash API to retrieve the image by its ID
+          const response = await axios.get(`https://api.unsplash.com/photos/${photoId}`, {
+              params: {
+                  client_id: "agMQ6wah1H9CKRa_1ZNPGH51PX5JSNgQeX79vUeb7w8"
+              }
+          });
+
+          // Download the image
+          const url = response.data.urls.regular;
+          const name = response.data.tags[0].title
+          const urlResponse = await axios.get(url, {responseType: "blob"});
+          const fileName = `${name}.jpg`;
+          const link = document.createElement("a");
+          link.href = window.URL.createObjectURL(new Blob([urlResponse.data]));
+          link.setAttribute("download", fileName);
+          document.body.appendChild(link);
+          link.click();
+      } catch (error) { // Handle any errors
+          error.message = "Failed your network"
+          console.error(error);
+      }
+  }
+
+  return handleDownload();
+
+}
