@@ -17,3 +17,17 @@
         left: 190px;
     }
 }
+
+@media (min-width: 338px) {
+    .search-bar{
+        left: 80px;
+    }
+
+    .search-btn{
+        left: 140px;
+    }
+
+    .download{
+        left: 63px;
+    }
+}

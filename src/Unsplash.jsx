@@ -7,7 +7,7 @@ export const searchImages = (query) => {
     params: {
       query: query,
       client_id: unsplashApiKey,
-      per_page: 25,
+      per_page: 15,
     },
   });
 };
